@@ -1,4 +1,3 @@
-
 /* user styles */
 
 /* styles are what change the color and sizes of stuff on your site. */
@@ -9,7 +8,7 @@ the images as variables */
 
 :root {
     --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
-    --body-bg-image: url('https://raw.githubusercontent.com/MrAranha/mraranha.github.io/refs/heads/main/css/background.png');
+    --body-bg-image: url('33.png');
 
     /* colors */
     --content: #211912;
@@ -28,24 +27,24 @@ and then link it! Many fonts have separate files for each style
 
 @font-face {
     font-family: Nunito;
-    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+    src: url('edunline.ttf');
 }
 
 @font-face {
     font-family: Nunito;
-    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    src: url('edunline.ttf');
     font-weight: bold;
 }
 
 @font-face {
     font-family: Nunito;
-    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    src: url('edunline.ttf');
     font-style: italic;
 }
 
 @font-face {
     font-family: Nunito;
-    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    src: url('edunline.ttf');
     font-style: italic;
     font-weight: bold;
 }
@@ -54,7 +53,6 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     background-color: #211912;
-    background-size: 450px;
     color: #fceaff;
     background-image: var(--body-bg-image);
     background-repeat: repeat;
@@ -70,7 +68,7 @@ body {
 /* below this line is CSS for the layout */
 
 /* this is a CSS comment
-to uncomment a line of CSS, remove the * and the /
+to uncomment a line of CSS, remove the * and the / 
 before and after the text */
 
 
@@ -90,7 +88,7 @@ and change the media query according to the comment! */
 /* the area below is for all links on your page
 EXCEPT for the navigation */
 #container a {
-    color: #ED64F5;
+    color: #b8c2b9;
     font-weight: bold;
     /* if you want to remove the underline
 you can add a line below here that says:
@@ -99,7 +97,7 @@ text-decoration:none; */
 
 #header {
     width: 100%;
-    background-color: #5e4e8c;
+    background-color: #382b26;
     /* header color here! */
     height: 150px;
     /* this is only for a background image! */
@@ -112,9 +110,10 @@ you can add them directly to the <div id="header"></div> element! */
 /* navigation section!! */
 #navbar {
     height: 40px;
-    background-color: #13092D;
-    /* navbar color */
-    width: 100%;
+    background-color: #382b26; /* navbar color */
+    width: 80%;
+    display: block; /* Ensure it's treated as a block element */
+    margin: 0 auto; /* Center it horizontally */
 }
 
 #navbar ul {
@@ -131,11 +130,12 @@ you can add them directly to the <div id="header"></div> element! */
 
 /* navigation links*/
 #navbar li a {
-    color: #ED64F5;
+    color: #b8c2b9;
     /* navbar text color */
     font-weight: 800;
     text-decoration: none;
     /* this removes the underline */
+    font-size: 25px; /* Increased font size */
 }
 
 /* navigation link when a link is hovered over */
@@ -145,8 +145,11 @@ you can add them directly to the <div id="header"></div> element! */
 }
 
 #flex {
-    display: flex;
+    display: flex;    width: 80%; /* Matches the width of the main content */
+    display: block; /* Ensure it's treated as a block element */
+    margin: 0 auto; /* Center it horizontally */
 }
+
 
 /* this colors BOTH sidebars
 if you want to style them separately,
@@ -159,11 +162,10 @@ aside {
     /* this makes the sidebar text slightly smaller */
 }
 
-
 /* this is the color of the main content area,
 between the sidebars! */
 main {
-    background-color: #43256E;
+    background-color: #382b26;
     flex: 1;
     padding: 20px;
     order: 2;
@@ -184,7 +186,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 }
 
 footer {
-    background-color: #13092D;
+    background-color: #382b26;
     /* background color for footer */
     width: 100%;
     height: 40px;
@@ -196,7 +198,7 @@ footer {
 h1,
 h2,
 h3 {
-    color: #ED64F5;
+    color: #b8c2b9;
 }
 
 h1 {
@@ -205,13 +207,13 @@ h1 {
 
 strong {
     /* this styles bold text */
-    color: #ED64F5;
+    color: #b8c2b9;
 }
 
 /* this is just a cool box, it's the darker colored one */
 .box {
-    background-color: #13092D;
-    border: 1px solid #ED64F5;
+    background-color: #382b26;
+    border: 1px solid #b8c2b9;
     padding: 10px;
 }
 
@@ -222,9 +224,8 @@ strong {
     height: 30px;
     padding: 10px;
     font-size: smaller;
-    background-color: #13092D;
+    background-color: #382b26;
 }
-
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 
