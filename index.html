@@ -3,28 +3,20 @@
 </head>
 <div id="headerArea">
     
-    <script>
-        document.addEventListener('mousemove', function(e) {
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
-        
-            // Shift background a bit based on mouse position
-            const moveX = (x - 0.5) * 50; // adjust sensitivity here
-            const moveY = (y - 0.5) * 50;
-        
-            document.body.style.backgroundPosition = `${50 + moveX}% ${50 + moveY}%`;
-        });
-        </script>
-        
+    <script src="js/script.js"></script>
 <nav id="navbar" style="margin-bottom: 0px;"><ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">Github</a></li>
     <li><a href="#">Projects</a></li>
     <li><a href="#">About</a></li>
   </ul></nav></div>
-
-
 <footer id="footer" style="margin-top: 0px;"></footer></div>
+<div id="staticImageContainer" style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 1000;">
+    <img src="css/tree.png" alt="Tree" style="width: 100%; height: auto;">
+</div>
+</div>
+
+
 <!-- THIS IS THE CSS !-->
 <style>
 </style><style class="darkreader darkreader--sync" media="screen"></style>
