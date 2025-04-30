@@ -8,10 +8,10 @@ the images as variables */
 
 :root {
     --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
-    --body-bg-image: url('33.png');
+    --body-bg-image: url('55.webp');
 
     /* colors */
-    --content: #211912;
+    --content: #1c221c;
 }
 
 /* if you have the URL of a font, you can set it below */
@@ -52,8 +52,8 @@ and then link it! Many fonts have separate files for each style
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: #211912;
-    color: #fceaff;
+    background-color: #1c221c;
+    color: #e0c9e0;
     background-image: var(--body-bg-image);
     background-repeat: repeat;
     background-attachment: fixed;
@@ -88,7 +88,7 @@ and change the media query according to the comment! */
 /* the area below is for all links on your page
 EXCEPT for the navigation */
 #container a {
-    color: #b8c2b9;
+    color: #e0c9e0;
     font-weight: bold;
     /* if you want to remove the underline
 you can add a line below here that says:
@@ -97,7 +97,7 @@ text-decoration:none; */
 
 #header {
     width: 100%;
-    background-color: #382b26;
+    background-color: #1c221c;
     /* header color here! */
     height: 150px;
     /* this is only for a background image! */
@@ -110,7 +110,7 @@ you can add them directly to the <div id="header"></div> element! */
 /* navigation section!! */
 #navbar {
     height: 40px;
-    background-color: #382b26; /* navbar color */
+    background-color: #1c221c; /* navbar color */
     width: 80%;
     display: block; /* Ensure it's treated as a block element */
     margin: 0 auto; /* Center it horizontally */
@@ -130,12 +130,12 @@ you can add them directly to the <div id="header"></div> element! */
 
 /* navigation links*/
 #navbar li a {
-    color: #b8c2b9;
+    color: #e0c9e0;
     /* navbar text color */
     font-weight: 800;
     text-decoration: none;
     /* this removes the underline */
-    font-size: 25px; /* Increased font size */
+    font-size: 40px; /* Increased font size */
 }
 
 /* navigation link when a link is hovered over */
@@ -155,7 +155,7 @@ you can add them directly to the <div id="header"></div> element! */
 if you want to style them separately,
 create styles for #leftSidebar and #rightSidebar */
 aside {
-    background-color: #241445;
+    background-color: #1c221c;
     width: 200px;
     padding: 20px;
     font-size: smaller;
@@ -165,7 +165,7 @@ aside {
 /* this is the color of the main content area,
 between the sidebars! */
 main {
-    background-color: #382b26;
+    background-color: #1c221c;
     flex: 1;
     padding: 20px;
     order: 2;
@@ -186,7 +186,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 }
 
 footer {
-    background-color: #382b26;
+    background-color: #1c221c;
     /* background color for footer */
     width: 100%;
     height: 40px;
@@ -198,22 +198,25 @@ footer {
 h1,
 h2,
 h3 {
-    color: #b8c2b9;
+    color: #e0c9e0;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 40px;
 }
 
+p {
+    font-size: 20px;
+}
 strong {
     /* this styles bold text */
-    color: #b8c2b9;
+    color: #e0c9e0;
 }
 
 /* this is just a cool box, it's the darker colored one */
 .box {
-    background-color: #382b26;
-    border: 1px solid #b8c2b9;
+    background-color: #1c221c;
+    border: 1px solid #e0c9e0;
     padding: 10px;
 }
 
@@ -224,7 +227,7 @@ strong {
     height: 30px;
     padding: 10px;
     font-size: smaller;
-    background-color: #382b26;
+    background-color: #1c221c;
 }
 
 /* BELOW THIS POINT IS MEDIA QUERY */
