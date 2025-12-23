@@ -49,20 +49,16 @@ and then link it! Many fonts have separate files for each style
     font-weight: bold;
 }
 .box {
-    display: inline-block;
+    display: block;
     padding: 0.75em 1em;
 
-    background-color: #1c221c;
-    border: 1px solid #e0c9e0;
-    padding: 10px;
     border: 2px solid currentColor;
-    background: transparent;
-
-    border-width: 2px;
+    background-color: transparent;
     color: #e0c9e0;
+
     box-sizing: border-box;
-    max-width: 100%;
 }
+
 p + p .box {
     border-top: none;
 }
